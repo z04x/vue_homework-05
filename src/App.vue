@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+    <p class="task-description">Задача 1.(проверял работу)</p>
+    <favorite-container :card-list-array="favoriteSources" />
+    <p class="task-description">Задача 2</p>
+    <shoping-container :shoping-list-array="shoppingSources" />
+    <p class="task-description">Задача 3</p>
+    <laptop-container :laptop-list-array="laptopInfo" />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+//* import components */
+import FavoriteContainer from '@/components/FavoriteContainer.vue'
+import ShopingContainer from '@/components/ShopingContainer.vue'
+import LaptopContainer from './components/LaptopContainer.vue'
+//* import Data for cards */
+import { favoriteSources } from '@/constants/1_data_google_favorite'
+import { shoppingSources } from '@/constants/2_data_google_shopping_search'
+import { laptopInfo } from '@/constants/3_data_laptop_info'
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-};
+    name: 'App',
+    components: {
+        FavoriteContainer,
+        ShopingContainer,
+        LaptopContainer,
+    },
+    data() {
+        return {
+            favoriteSources,
+            shoppingSources,
+            laptopInfo,
+        }
+    },
+}
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './assets/style';
 </style>
