@@ -5,7 +5,7 @@ export const laptopInfo = [
         link: "https://www.ctrs.com.ua/noutbuki-i-ultrabuki/acer-swift-3-sf314-512-nxk7meu008-blue-713001.html",
         title: "Ноутбук Acer Swift 1 SF114-34-P0D6 Silver (NX.A77EU.015)",
         price: 32999,
-        discountPrice:29999,
+        discountPrice: 49999,
     },
     {
         id: 2,
@@ -29,6 +29,6 @@ export const laptopInfo = [
         link: "https://www.ctrs.com.ua/noutbuki-i-ultrabuki/acer-swift-3-sf314-512-nxk7meu008-blue-713001.html",
         title: "Ноутбук Acer Nitro 5 AN515-57-75LL Black (NH.QELEU.013)",
         price: 41999,
-        discountPrice: 39999,
+        discountPrice: 49999,
     },
 ]

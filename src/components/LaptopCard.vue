@@ -62,17 +62,20 @@ export default {
         padding: 10px;
         margin-bottom: 15px;
     }
+
     &__info-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
     &__image {
         width: 212px;
         height: 212px;
         background: #6e6e6e28;
         padding: 15px;
         border-radius: 15px;
+
         img {
             object-fit: contain;
             width: 100%;
@@ -80,8 +83,7 @@ export default {
         }
     }
 
-    &__model {
-    }
+    &__model {}
 
     &__price {
         span {
@@ -96,7 +98,7 @@ export default {
             font-size: 14px;
             font-weight: 600;
             color: rgba(87, 86, 86, 0.541);
-            text-decoration: line-through red;
+            text-decoration: line-through;
         }
     }
 
